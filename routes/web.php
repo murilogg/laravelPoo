@@ -20,3 +20,9 @@ Route::any('/primeira', function () {
 });
 
 Route::get('clientes','ClientesController@index');
+
+Route::patch('clientes','ClientesController@index');
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
