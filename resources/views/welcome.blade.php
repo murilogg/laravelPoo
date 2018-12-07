@@ -80,9 +80,7 @@
 
                 <div class="links">
                     <a href='clientes'>Listar clientes </a>
-                    <a href="https://laravel.com/docs">Listar clientes fisico </a>
-                    <a href="https://laravel.com/docs">Listar clientes Juridico</a>
-
+                    <a href='clientes'>Listar Clientes Fisico e Juridicos</a>
                 </div>
             </div>
         </div>

@@ -10,22 +10,21 @@
                             CLIENTES</a>
                     </div>
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
                         <table class="table">
                             <th>ID</th>
                             <th>Nome</th>
-                            <th>Endereço</th>
+                            <th>Consultar</th>
                             <tbody>
                             @foreach($clientes as $cliente)
                                 <tr>
                                     <td>{{$cliente->id}}</td>
                                     <td>{{$cliente->nome}}</td>
-                                    <td>{{$cliente->endereco}}</td>
-
+                                    <td>
+                                        <a href="clientes/{{$cliente->id}}/dados"
+                                           class="btn btn-outline-primary btn-sm">Dados do Cliente</a>
+                                        {!! Form::open(['url'=>'/clientes/'.$cliente->id]) !!}
+                                        {!! Form::close() !!}
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>

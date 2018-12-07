@@ -11,4 +11,10 @@ class ClientesController extends Controller
         $clientes = Cliente::get();
         return view('clientes',['clientes'=>$clientes]);
     }
+
+    public function dados($id){
+        $cliente = Cliente::findOrFail($id);
+        return view('dados',['cliente'=>$cliente]);
+    }
+
 }

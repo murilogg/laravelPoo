@@ -23,6 +23,8 @@ Route::get('clientes','ClientesController@index');
 
 Route::patch('clientes','ClientesController@index');
 
+route::get('clientes/{cliente}/dados', 'ClientesController@dados');
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
