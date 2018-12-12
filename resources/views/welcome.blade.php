@@ -12,10 +12,12 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background: -webkit-gradient(linear, left top, left bottom, from(silver), to(#383d41));
+                background: -moz-linear-gradient(top, #1d2124, white);
+                filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#1d2124', EndColorStr='white');
+                color: white;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 900;
                 height: 100vh;
                 margin: 0;
             }
@@ -49,7 +51,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -80,7 +82,6 @@
 
                 <div class="links">
                     <a href='clientes'>Listar clientes </a>
-                    <a href='clientes'>Listar Clientes Fisico e Juridicos</a>
                 </div>
             </div>
         </div>

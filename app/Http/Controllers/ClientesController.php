@@ -13,8 +13,8 @@ class ClientesController extends Controller
     }
 
     public function dados($id){
-        $cliente = Cliente::findOrFail($id);
-        return view('dados',['cliente'=>$cliente]);
+        $cliente = Cliente::find($id);
+        return view('dados', compact('cliente'));
     }
 
 }

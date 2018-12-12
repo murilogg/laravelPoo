@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+<head style=" background:silver">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">PAGINA PRINCIPAL</a>
+                <a class="navbar-brand" style="color:black" href="{{ url('/') }}">PAGINA PRINCIPAL</a>
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

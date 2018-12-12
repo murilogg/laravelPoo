@@ -1,27 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container"  >
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">BEM - VINDO(A)
-                        <a class="float-right" style="color: #1d2124" href="{{url('clientes')}}">LISTAGEM DE
-                            CLIENTES</a>
-                    </div>
+                <div class="card border-dark">
+                    <div class="card-header border-dark" style="background: silver">LISTAGEM DE CLIENTES</div>
                     <div class="card-body">
                         <table class="table">
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Consultar</th>
+                            <th class="border-right border-left" >ID</th>
+                            <th class="border-right" >NOME</th>
+                            <th class="border-right" >CONSULTAR</th>
                             <tbody>
                             @foreach($clientes as $cliente)
                                 <tr>
-                                    <td>{{$cliente->id}}</td>
-                                    <td>{{$cliente->nome}}</td>
-                                    <td>
+                                    <td class="border-right border-left border-bottom">{{$cliente->id}}</td>
+                                    <td class="border-bottom">{{$cliente->nome}}</td>
+
+                                    <td class="border-left border-right border-bottom">
                                         <a href="clientes/{{$cliente->id}}/dados"
-                                           class="btn btn-outline-primary btn-sm">Dados do Cliente</a>
+                                           style="color:black">Dados do Cliente</a>
                                         {!! Form::open(['url'=>'/clientes/'.$cliente->id]) !!}
                                         {!! Form::close() !!}
                                     </td>
