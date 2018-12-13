@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head style=" background:silver">
+<head >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,9 +21,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" style="color:black" href="{{ url('/') }}">PAGINA PRINCIPAL</a>
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style=" background:-webkit-gradient(linear, left top, left bottom, from(silver ), to(#383d41))">
+            <div class="container" >
+                <a class="navbar-brand" style="color:white" href="{{ url('/') }}"><h4>PAGINA PRINCIPAL</h4></a>
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,7 +43,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style=" background:-webkit-gradient(linear, left bottom, left top, from(white ), to(silver))">
             @yield('content')
         </main>
     </div>
